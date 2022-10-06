@@ -30,7 +30,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/personas")
 @CrossOrigin(origins="https://portfolio-sebastian.web.app/portfolioweb")
 public class AuthController {
     
