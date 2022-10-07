@@ -12,11 +12,12 @@ public class UnoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(UnoApplication.class, args);
 	}
-        @Bean
-        public WebMvcConfigurer corsConfigurer() {
+       @Bean
+	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
+			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/greeting-javaconfig").allowedOrigins("https://portfolio-113b8.web.app/portfolioweb");
+				registry.addMapping("/**").allowedOrigins("https://portfolio-113b8.web.app/portfolioweb").allowedMethods("*").allowedHeaders("*");
 			}
 		};
 	}
