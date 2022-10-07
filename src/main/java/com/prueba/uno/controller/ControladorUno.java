@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins="https://portfolio-113b8.web.app/portfolioweb")
+
 
 public class ControladorUno {
     
@@ -74,7 +74,7 @@ public class ControladorUno {
        persoServy.crearPersona(per);
        return new ResponseEntity(new Mensaje("Se actualizo Educacion!!!"), HttpStatus.OK);
    }
-    
+    @CrossOrigin(origins="https://portfolio-113b8.web.app/portfolioweb")
     @GetMapping("/perfil")
     public Persona buscarPersona(){
        return persoServy.buscarPersona((int) 1);
