@@ -31,7 +31,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin
+@CrossOrigin(origins="https://portfolio-113b8.web.app/portfolioweb")
 public class AuthController {
     
     @Autowired
