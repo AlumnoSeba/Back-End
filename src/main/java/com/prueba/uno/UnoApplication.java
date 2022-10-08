@@ -17,7 +17,7 @@ public class UnoApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("https://portfolio-sebastian.web.app/portfolioweb").allowedMethods("*").allowedHeaders("*");
+				registry.addMapping("/**").allowedOrigins("https://portfolio-sebastian.web.app").allowedMethods("*").allowedHeaders("*");
 			}
 		};
 	}
