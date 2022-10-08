@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -72,7 +72,7 @@ public class ControladorUno {
        per.setImag(perDto.getImag());
        
        persoServy.crearPersona(per);
-       return new ResponseEntity(new Mensaje("Se actualizo Educacion!!!"), HttpStatus.OK);
+       return new ResponseEntity(new Mensaje("Se actualizo correctamente!!!"), HttpStatus.OK);
    }
     
     @GetMapping("/perfil")
