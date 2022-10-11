@@ -4,10 +4,12 @@ package com.prueba.uno.service;
 import com.prueba.uno.ejem.Persona;
 import com.prueba.uno.repository.PersonaRepository;
 import java.util.List;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Transactional
 public class PersonaService implements IPersonaService{
 
     @Autowired
